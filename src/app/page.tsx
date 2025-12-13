@@ -91,14 +91,17 @@ export default function Home() {
                 href={`/services/${service.id}`}
                 className="service-card bg-white rounded-xl p-6 shadow-sm border border-gray-100"
               >
-                <div className="mb-4">
-                  <Image
-                    src={service.icon}
-                    alt={service.name}
-                    width={48}
-                    height={48}
-                    unoptimized
-                  />
+                <div className="flex gap-2 mb-4">
+                  {service.icons.map((icon, idx) => (
+                    <Image
+                      key={idx}
+                      src={icon}
+                      alt={service.name}
+                      width={36}
+                      height={36}
+                      unoptimized
+                    />
+                  ))}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {service.name}

@@ -35,13 +35,18 @@ export default function PricingPage() {
                         {SERVICES.map((service) => (
                             <div key={service.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                                 <div className="bg-gray-50 px-6 py-4 border-b flex items-center gap-4">
-                                    <Image
-                                        src={service.icon}
-                                        alt={service.name}
-                                        width={40}
-                                        height={40}
-                                        unoptimized
-                                    />
+                                    <div className="flex gap-2 flex-wrap">
+                                        {service.icons.map((icon, idx) => (
+                                            <Image
+                                                key={idx}
+                                                src={icon}
+                                                alt={service.name}
+                                                width={32}
+                                                height={32}
+                                                unoptimized
+                                            />
+                                        ))}
+                                    </div>
                                     <div>
                                         <h2 className="text-2xl font-bold text-gray-900">
                                             {service.name}

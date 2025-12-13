@@ -48,14 +48,17 @@ export default async function ServicePage({ params }: Props) {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row items-center gap-12">
                         <div className="flex-1">
-                            <div className="mb-4">
-                                <Image
-                                    src={service.icon}
-                                    alt={service.name}
-                                    width={72}
-                                    height={72}
-                                    unoptimized
-                                />
+                            <div className="flex gap-3 mb-4 flex-wrap">
+                                {service.icons.map((icon, idx) => (
+                                    <Image
+                                        key={idx}
+                                        src={icon}
+                                        alt={service.name}
+                                        width={56}
+                                        height={56}
+                                        unoptimized
+                                    />
+                                ))}
                             </div>
                             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                                 {service.name} Help
@@ -196,7 +199,7 @@ export default async function ServicePage({ params }: Props) {
                             >
                                 <div className="flex justify-center mb-2">
                                     <Image
-                                        src={s.icon}
+                                        src={s.icons[0]}
                                         alt={s.name}
                                         width={32}
                                         height={32}

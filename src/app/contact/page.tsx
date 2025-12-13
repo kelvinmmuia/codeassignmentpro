@@ -149,7 +149,7 @@ export default function ContactPage() {
                                 className="flex items-center gap-2 bg-gray-100 hover:bg-primary hover:text-white px-4 py-2 rounded-lg transition-colors"
                             >
                                 <Image
-                                    src={service.icon}
+                                    src={service.icons[0]}
                                     alt={service.name}
                                     width={24}
                                     height={24}

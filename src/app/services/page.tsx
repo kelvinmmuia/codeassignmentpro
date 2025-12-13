@@ -36,13 +36,18 @@ export default function ServicesPage() {
                                 className="service-card bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:border-primary"
                             >
                                 <div className="mb-4">
-                                    <Image
-                                        src={service.icon}
-                                        alt={service.name}
-                                        width={56}
-                                        height={56}
-                                        unoptimized
-                                    />
+                                    <div className="flex gap-2 mb-4 flex-wrap">
+                                        {service.icons.map((icon, idx) => (
+                                            <Image
+                                                key={idx}
+                                                src={icon}
+                                                alt={service.name}
+                                                width={40}
+                                                height={40}
+                                                unoptimized
+                                            />
+                                        ))}
+                                    </div>
                                 </div>
                                 <h2 className="text-2xl font-bold text-gray-900 mb-3">
                                     {service.name}
