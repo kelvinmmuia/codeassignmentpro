@@ -7,7 +7,7 @@
   --primary-dark: #1d4ed8;
   --secondary: #10b981;
   --accent: #f59e0b;
-  --muted: #64748b;
+  --muted: #475569;
 }
 
 @theme inline {
@@ -73,9 +73,12 @@ html {
 
 /* WhatsApp button pulse */
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
