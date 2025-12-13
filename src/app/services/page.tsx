@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { SERVICES, CONTACT } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -34,7 +35,15 @@ export default function ServicesPage() {
                                 href={`/services/${service.id}`}
                                 className="service-card bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:border-primary"
                             >
-                                <div className="text-5xl mb-4">{service.icon}</div>
+                                <div className="mb-4">
+                                    <Image
+                                        src={service.icon}
+                                        alt={service.name}
+                                        width={56}
+                                        height={56}
+                                        unoptimized
+                                    />
+                                </div>
                                 <h2 className="text-2xl font-bold text-gray-900 mb-3">
                                     {service.name}
                                 </h2>

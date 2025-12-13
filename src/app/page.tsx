@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SERVICES, TRUST_BADGES, FAQ_ITEMS, CONTACT } from "@/lib/constants";
 
 export default function Home() {
@@ -90,7 +91,15 @@ export default function Home() {
                 href={`/services/${service.id}`}
                 className="service-card bg-white rounded-xl p-6 shadow-sm border border-gray-100"
               >
-                <div className="text-4xl mb-4">{service.icon}</div>
+                <div className="mb-4">
+                  <Image
+                    src={service.icon}
+                    alt={service.name}
+                    width={48}
+                    height={48}
+                    unoptimized
+                  />
+                </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {service.name}
                 </h3>

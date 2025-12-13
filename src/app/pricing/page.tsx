@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { SERVICES, CONTACT } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -33,9 +34,14 @@ export default function PricingPage() {
                     <div className="space-y-16">
                         {SERVICES.map((service) => (
                             <div key={service.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                                {/* Service Header */}
                                 <div className="bg-gray-50 px-6 py-4 border-b flex items-center gap-4">
-                                    <span className="text-3xl">{service.icon}</span>
+                                    <Image
+                                        src={service.icon}
+                                        alt={service.name}
+                                        width={40}
+                                        height={40}
+                                        unoptimized
+                                    />
                                     <div>
                                         <h2 className="text-2xl font-bold text-gray-900">
                                             {service.name}
@@ -51,8 +57,8 @@ export default function PricingPage() {
                                             <div
                                                 key={tier.size}
                                                 className={`p-4 rounded-lg border-2 ${index === 2
-                                                        ? "border-primary bg-primary/5"
-                                                        : "border-gray-100"
+                                                    ? "border-primary bg-primary/5"
+                                                    : "border-gray-100"
                                                     }`}
                                             >
                                                 {index === 2 && (

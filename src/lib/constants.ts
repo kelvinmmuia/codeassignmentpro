@@ -26,7 +26,7 @@ export const SERVICES = [
         id: "python-help",
         name: "Python Programming",
         shortDesc: "Scripts, automation, data processing, ML models",
-        icon: "🐍",
+        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
         keywords: ["python assignment help", "python homework", "python programming"],
         pricing: [
             { size: "XS", scope: "Simple scripts, basic automation", price: 15, originalPrice: 20 },
@@ -40,7 +40,7 @@ export const SERVICES = [
         id: "data-analysis",
         name: "Data Analysis",
         shortDesc: "Excel, statistics, visualization, dashboards",
-        icon: "📊",
+        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
         keywords: ["data analysis help", "statistics homework", "excel data analysis"],
         pricing: [
             { size: "XS", scope: "Basic Excel/spreadsheet analysis", price: 15, originalPrice: 20 },
@@ -54,7 +54,7 @@ export const SERVICES = [
         id: "r-programming",
         name: "R Programming",
         shortDesc: "Statistics, ggplot, Shiny apps, research",
-        icon: "📈",
+        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg",
         keywords: ["R programming help", "R statistics", "ggplot visualization"],
         pricing: [
             { size: "XS", scope: "Basic R scripts, simple plots", price: 15, originalPrice: 20 },
@@ -68,7 +68,7 @@ export const SERVICES = [
         id: "sql-database",
         name: "SQL & Database",
         shortDesc: "Queries, design, optimization, procedures",
-        icon: "🗄️",
+        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
         keywords: ["SQL assignment help", "database design", "SQL queries"],
         pricing: [
             { size: "XS", scope: "Simple queries, basic CRUD", price: 12, originalPrice: 16 },
@@ -82,7 +82,7 @@ export const SERVICES = [
         id: "machine-learning",
         name: "Machine Learning",
         shortDesc: "Models, training, pipelines, deployment",
-        icon: "🤖",
+        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
         keywords: ["machine learning help", "ML assignment", "AI programming"],
         pricing: [
             { size: "XS", scope: "Pre-built model usage", price: 20, originalPrice: 26 },
@@ -96,7 +96,7 @@ export const SERVICES = [
         id: "web-development",
         name: "Web Development",
         shortDesc: "React, full-stack, APIs, responsive sites",
-        icon: "🌐",
+        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
         keywords: ["web development help", "React assignment", "full-stack programming"],
         pricing: [
             { size: "XS", scope: "Single page, static", price: 20, originalPrice: 26 },

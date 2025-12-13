@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { CONTACT, SERVICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -147,7 +148,13 @@ export default function ContactPage() {
                                 rel="noopener noreferrer"
                                 className="flex items-center gap-2 bg-gray-100 hover:bg-primary hover:text-white px-4 py-2 rounded-lg transition-colors"
                             >
-                                <span>{service.icon}</span>
+                                <Image
+                                    src={service.icon}
+                                    alt={service.name}
+                                    width={24}
+                                    height={24}
+                                    unoptimized
+                                />
                                 <span className="font-medium">{service.name}</span>
                             </a>
                         ))}

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { SERVICES, CONTACT, FAQ_ITEMS } from "@/lib/constants";
 
 type Props = {
@@ -47,7 +48,15 @@ export default async function ServicePage({ params }: Props) {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row items-center gap-12">
                         <div className="flex-1">
-                            <div className="text-6xl mb-4">{service.icon}</div>
+                            <div className="mb-4">
+                                <Image
+                                    src={service.icon}
+                                    alt={service.name}
+                                    width={72}
+                                    height={72}
+                                    unoptimized
+                                />
+                            </div>
                             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                                 {service.name} Help
                             </h1>
@@ -185,7 +194,15 @@ export default async function ServicePage({ params }: Props) {
                                 href={`/services/${s.id}`}
                                 className="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow"
                             >
-                                <div className="text-3xl mb-2">{s.icon}</div>
+                                <div className="flex justify-center mb-2">
+                                    <Image
+                                        src={s.icon}
+                                        alt={s.name}
+                                        width={32}
+                                        height={32}
+                                        unoptimized
+                                    />
+                                </div>
                                 <span className="font-medium text-gray-900 text-sm">{s.name}</span>
                             </Link>
                         ))}
