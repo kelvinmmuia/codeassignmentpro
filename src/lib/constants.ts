@@ -10,9 +10,95 @@ export const SITE_CONFIG = {
 export const CONTACT = {
     whatsapp: "+254728450288",
     whatsappLink: "https://wa.me/254728450288",
-    email: "kelvinmwaka@gmail.com",
     buymeacoffee: "https://buymeacoffee.com/kelvinmwakh",
 };
+
+// Payment methods - Peer-to-peer, no middleman
+export const PAYMENT_METHODS = [
+    {
+        id: "buymeacoffee",
+        name: "BuyMeACoffee",
+        description: "Secure online payment",
+        icon: "coffee",
+        link: "https://buymeacoffee.com/kelvinmwakh",
+    },
+    {
+        id: "mpesa",
+        name: "M-Pesa",
+        description: "Direct mobile money transfer",
+        icon: "phone",
+        regions: ["Kenya", "Tanzania", "Uganda"],
+    },
+    {
+        id: "western-union",
+        name: "Western Union",
+        description: "International money transfer",
+        icon: "globe",
+        regions: ["Worldwide"],
+    },
+    {
+        id: "remitly",
+        name: "Remitly",
+        description: "Fast international transfers",
+        icon: "zap",
+        regions: ["USA", "UK", "Canada", "Australia", "Europe"],
+    },
+    {
+        id: "wise",
+        name: "Wise (TransferWise)",
+        description: "Low-fee international transfers",
+        icon: "arrow-right",
+        regions: ["Worldwide"],
+    },
+];
+
+// Trust promises - Core value proposition
+export const TRUST_PROMISES = [
+    {
+        icon: "user-x",
+        title: "No Signup Required",
+        description: "Just message us on WhatsApp. No accounts, no forms, no hassle.",
+    },
+    {
+        icon: "credit-card-off",
+        title: "No Payment Storage",
+        description: "We never store your payment details. Direct peer-to-peer transactions only.",
+    },
+    {
+        icon: "users",
+        title: "No Middlemen",
+        description: "Work directly with the expert. No agencies taking 80% of your payment.",
+    },
+    {
+        icon: "shield-check",
+        title: "Your Privacy Protected",
+        description: "Your assignments are never shared, resold, or published. Ever.",
+    },
+];
+
+// Why choose us - Competitive advantages
+export const WHY_CHOOSE_US = [
+    {
+        title: "Direct Expert Access",
+        description: "Unlike other platforms where middlemen take 80% of fees, you work directly with the expert. Your full payment goes to the person doing the work.",
+        highlight: "100% of payment to expert",
+    },
+    {
+        title: "Preview Before Payment",
+        description: "First-time clients receive partial work preview before any payment. See our quality before committing.",
+        highlight: "Risk-free first order",
+    },
+    {
+        title: "Transparent Pricing",
+        description: "No hidden fees, no surprise charges. The quote you receive is the price you pay.",
+        highlight: "What you see is what you pay",
+    },
+    {
+        title: "Unlimited Revisions",
+        description: "Not satisfied? We'll revise until you're happy. Your success is our reputation.",
+        highlight: "Satisfaction guaranteed",
+    },
+];
 
 export const TRUST_BADGES = [
     { label: "6+ Years Experience", icon: "trophy" },
@@ -136,27 +222,36 @@ export const SERVICES = [
 
 export const FAQ_ITEMS = [
     {
+        question: "Do I need to create an account or sign up?",
+        answer: "No! We believe in simplicity. Just message us on WhatsApp with your assignment details. No accounts, no forms, no personal information collected. Your privacy is our priority.",
+    },
+    {
+        question: "How do payments work? Is it safe?",
+        answer: "We use direct peer-to-peer payments with no middlemen. You can pay via BuyMeACoffee (credit/debit cards), M-Pesa, Western Union, Remitly, or Wise. We never store your payment details - each transaction is direct and secure.",
+    },
+    {
+        question: "How is this different from other assignment help sites?",
+        answer: "Most platforms charge you $400 and pay experts only $80, pocketing 80% as 'service fees'. We work directly with you - no middlemen, no inflated prices. You pay fair rates, and 100% goes to the expert doing your work.",
+    },
+    {
         question: "How quickly can you complete my assignment?",
-        answer: "Turnaround depends on complexity. Small tasks can be done within 24 hours, while larger projects typically take 3-7 days. Contact us on WhatsApp for a specific timeline.",
+        answer: "Turnaround depends on complexity. Small tasks can be done within 24 hours, while larger projects typically take 3-7 days. Message us on WhatsApp for a specific timeline.",
     },
     {
         question: "What if I'm not satisfied with the work?",
-        answer: "We offer unlimited revisions until you're satisfied. If the work doesn't meet the agreed requirements, we provide a full refund.",
-    },
-    {
-        question: "How do I make payments?",
-        answer: "We accept payments through BuyMeACoffee for secure transactions. First-time customers can receive partial work before full payment.",
+        answer: "We offer unlimited revisions until you're satisfied. If the work doesn't meet the agreed requirements, we provide a full refund. First-time clients also get a partial work preview before payment.",
     },
     {
         question: "Is my assignment kept confidential?",
-        answer: "Absolutely. We never share, resell, or publish any client work. Your privacy and academic integrity are our top priorities.",
+        answer: "Absolutely. We never share, resell, or publish any client work. Your privacy and academic integrity are our top priorities. We don't even require your real name.",
     },
     {
         question: "Do you provide explanations with the code?",
-        answer: "Yes! All deliverables include detailed comments and documentation so you can understand and learn from the solution.",
+        answer: "Yes! All deliverables include detailed comments and documentation so you can understand and learn from the solution. This helps you explain your work confidently.",
     },
     {
         question: "What programming languages do you support?",
-        answer: "We specialize in Python, R, SQL, JavaScript, TypeScript, and related frameworks. We also handle Excel, MATLAB, SPSS, and other data tools.",
+        answer: "We specialize in Python, R, SQL, JavaScript, TypeScript, and related frameworks. We also handle Excel, MATLAB, SPSS, Stata, and other data tools.",
     },
 ];
+
