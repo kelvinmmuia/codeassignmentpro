@@ -472,10 +472,17 @@ export default function Home() {
             {TESTIMONIALS.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="bg-gray-50 rounded-2xl p-6 border border-gray-100"
+                className="bg-gray-50 rounded-2xl p-6 border border-gray-100 relative"
               >
+                {/* Highlight Badge */}
+                {testimonial.highlight && (
+                  <span className="absolute -top-3 left-4 bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    {testimonial.highlight}
+                  </span>
+                )}
+
                 {/* Rating Stars */}
-                <div className="flex gap-1 mb-4">
+                <div className="flex gap-1 mb-4 mt-2">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <svg
                       key={i}

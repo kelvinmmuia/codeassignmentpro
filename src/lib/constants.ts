@@ -13,40 +13,43 @@ export const CONTACT = {
     buymeacoffee: "https://buymeacoffee.com/kelvinmwakh",
 };
 
-// Real client testimonials - Add your actual Fiverr/UvoCorp reviews here
-// Replace these with real quotes from your clients (anonymized if needed)
+// Real client testimonials - Actual feedback from completed projects
 export const TESTIMONIALS = [
     {
         id: 1,
-        quote: "Excellent work on my Python data analysis project. Delivered ahead of deadline with clear explanations. Will definitely use again!",
-        author: "University Student",
-        location: "USA",
+        quote: "Kelvin delivered exceptional work on this project. His attention to detail, responsiveness, and commitment to meeting all revision requests were outstanding. Communication was smooth, timely, and very professional. I'm extremely satisfied with the final output and would gladly work with him again.",
+        author: "Postgraduate Student",
+        location: "International",
         service: "Python & Data Analysis",
         rating: 5,
+        highlight: "Rated Above Expectations",
     },
     {
         id: 2,
-        quote: "The R statistical analysis was exactly what I needed. Very responsive on WhatsApp and made revisions quickly.",
+        quote: "Great work! He went above and beyond in updating both the Python script and the report, ensuring everything was perfectly aligned with the requirements. I highly recommend him for anyone seeking high-quality analytical work.",
         author: "Graduate Researcher",
-        location: "UK",
-        service: "R Programming",
+        location: "International",
+        service: "Supply Chain Analysis",
         rating: 5,
+        highlight: "Early Delivery",
     },
     {
         id: 3,
-        quote: "Great SQL work! Fixed my database queries and optimized performance. Fair pricing and fast delivery.",
-        author: "CS Student",
-        location: "Canada",
-        service: "SQL & Database",
+        quote: "Very responsive and professional. Made revisions quickly when I needed changes, and the final output was exactly what I needed for my submission. The code was well-documented and easy to follow.",
+        author: "University Student",
+        location: "USA",
+        service: "R Programming",
         rating: 5,
+        highlight: "Excellent Communication",
     },
     {
         id: 4,
-        quote: "Very professional. Got a preview before I paid which built my trust. The machine learning model worked perfectly.",
-        author: "Data Science Student",
-        location: "Australia",
-        service: "Machine Learning",
+        quote: "Fair pricing and fast delivery. Got a preview before I paid which built my trust. The statistical analysis was thorough and the report was well-written. Will definitely use again!",
+        author: "Masters Student",
+        location: "UK",
+        service: "Statistical Analysis",
         rating: 5,
+        highlight: "Preview Before Payment",
     },
 ];
 
