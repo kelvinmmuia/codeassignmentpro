@@ -15,7 +15,7 @@ export default function DiscountPage() {
                     Discount Policy
                 </h1>
                 <p className="text-sm text-gray-500 mb-8">
-                    Last updated: December 2024
+                    Last updated: December 2025
                 </p>
 
                 <div className="bg-white rounded-xl p-8 shadow-sm space-y-8">
