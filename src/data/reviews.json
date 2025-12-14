@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "quote": "Kelvin delivered exceptional work on this project. His attention to detail, responsiveness, and commitment to meeting all revision requests were outstanding. Communication was smooth, timely, and very professional. I'm extremely satisfied with the final output and would gladly work with him again.",
+        "author": "Postgraduate Student",
+        "location": "Dubai, UAE",
+        "service": "Python & Data Analysis",
+        "rating": 5,
+        "highlight": "Rated Above Expectations"
+    },
+    {
+        "id": 2,
+        "quote": "Great work! He went above and beyond in updating both the Python script and the report, ensuring everything was perfectly aligned with the requirements. I highly recommend him for anyone seeking high-quality analytical work.",
+        "author": "Graduate Researcher",
+        "location": "Qatar",
+        "service": "Supply Chain Analysis",
+        "rating": 5,
+        "highlight": "Early Delivery"
+    },
+    {
+        "id": 3,
+        "quote": "Tremendous help! Have been working on this task for a few weeks and the expert made it seem easy.",
+        "author": "Customer",
+        "location": "USA",
+        "service": "Python Programming",
+        "rating": 5,
+        "highlight": "Made It Easy"
+    },
+    {
+        "id": 4,
+        "quote": "Amazing work on everything!!! The 30 homework assignments were completed perfectly with great explanations.",
+        "author": "University Student",
+        "location": "USA",
+        "service": "Data Analytics",
+        "rating": 5,
+        "highlight": "30 Tasks Completed"
+    },
+    {
+        "id": 5,
+        "quote": "Great helper! If I need Excel help again I need it to be him!",
+        "author": "Customer",
+        "location": "USA",
+        "service": "Data Analytics",
+        "rating": 5,
+        "highlight": "Excel Expert"
+    },
+    {
+        "id": 6,
+        "quote": "Very responsive and professional. Made revisions quickly when I needed changes, and the final output was exactly what I needed for my submission.",
+        "author": "University Student",
+        "location": "USA",
+        "service": "R Programming",
+        "rating": 5,
+        "highlight": "Quick Revisions"
+    },
+    {
+        "id": 7,
+        "quote": "Excellent database work! Communication was great and the task explanations helped me understand the solution.",
+        "author": "CS Student",
+        "location": "USA",
+        "service": "Databases",
+        "rating": 5,
+        "highlight": "Great Communication"
+    },
+    {
+        "id": 8,
+        "quote": "Quality R Studio work! Got the graphs exactly as needed with excellent delivery time.",
+        "author": "Graduate Student",
+        "location": "Abu Dhabi, UAE",
+        "service": "R Programming",
+        "rating": 5,
+        "highlight": "Quality Work"
+    },
+    {
+        "id": 9,
+        "quote": "Fair pricing and fast delivery. Got a preview before I paid which built my trust. The statistical analysis was thorough and the report was well-written.",
+        "author": "Masters Student",
+        "location": "Abu Dhabi, UAE",
+        "service": "Statistical Analysis",
+        "rating": 5,
+        "highlight": "Preview Before Payment"
+    },
+    {
+        "id": 10,
+        "quote": "Built an optimization tool for freight RFP. Tremendous help after working on the task for weeks - the expert made it seem easy!",
+        "author": "Business Professional",
+        "location": "USA",
+        "service": "Python Programming",
+        "rating": 5,
+        "highlight": "Complex Project"
+    },
+    {
+        "id": 11,
+        "quote": "Excellent IT data analytics work. Great response time and followed all instructions perfectly.",
+        "author": "Data Analyst",
+        "location": "Qatar",
+        "service": "Data Analytics",
+        "rating": 5,
+        "highlight": "IT Analytics"
+    },
+    {
+        "id": 12,
+        "quote": "Elementary statistics help was perfect. Great communication and on-time delivery. Highly recommend!",
+        "author": "University Student",
+        "location": "USA",
+        "service": "Statistics",
+        "rating": 5,
+        "highlight": "Statistics Expert"
+    }
+]
