@@ -121,18 +121,38 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Bottom bar */}
-                <div className="border-t border-gray-800 mt-8 pt-8">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="text-sm text-gray-500">
-                            &copy; {new Date().getFullYear()} {SITE_CONFIG.name}. All rights reserved.
-                        </p>
-                        <div className="flex items-center gap-6 text-sm text-gray-500">
-                            <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
-                            <Link href="/pricing" className="hover:text-primary transition-colors">Pricing</Link>
-                            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
-                        </div>
+                {/* Policy Links */}
+                <div className="border-t border-gray-800 mt-8 pt-6">
+                    <div className="flex flex-wrap justify-center gap-4 text-xs text-gray-500 mb-4">
+                        <Link href="/terms" className="hover:text-primary transition-colors">Terms and Conditions</Link>
+                        <span className="text-gray-700">|</span>
+                        <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+                        <span className="text-gray-700">|</span>
+                        <Link href="/confidentiality" className="hover:text-primary transition-colors">Confidentiality</Link>
+                        <span className="text-gray-700">|</span>
+                        <Link href="/refund" className="hover:text-primary transition-colors">Refund Policy</Link>
+                        <span className="text-gray-700">|</span>
+                        <Link href="/discount" className="hover:text-primary transition-colors">Discounts</Link>
                     </div>
+                </div>
+
+                {/* Disclaimer - non-copyable */}
+                <div
+                    className="text-center text-xs text-gray-600 py-4 px-4 bg-gray-800/50 rounded-lg mb-6"
+                    style={{ userSelect: "none", WebkitUserSelect: "none" }}
+                >
+                    <p>
+                        I provide programming and research services to willing buyers for educational purposes only.
+                        All materials from the service must be used with proper reference and in accordance with{" "}
+                        <Link href="/terms" className="text-primary hover:underline">Terms and Conditions</Link>.
+                    </p>
+                </div>
+
+                {/* Copyright */}
+                <div className="text-center">
+                    <p className="text-sm text-gray-500">
+                        &copy; {new Date().getFullYear()} {SITE_CONFIG.name}. All rights reserved.
+                    </p>
                 </div>
             </div>
         </footer>
