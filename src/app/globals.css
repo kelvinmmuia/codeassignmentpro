@@ -5,9 +5,12 @@
   --foreground: #0f172a;
   --primary: #2563eb;
   --primary-dark: #1d4ed8;
-  --secondary: #10b981;
-  --accent: #f59e0b;
-  --muted: #64748b;
+  --secondary: #059669;
+  /* Darker green for better contrast */
+  --accent: #d97706;
+  /* Darker amber for better contrast */
+  --muted: #475569;
+  /* Darker gray for better contrast (was #64748b) */
 }
 
 @theme inline {
@@ -35,6 +38,110 @@ html {
   background-color: var(--primary);
   color: white;
 }
+
+/* ==========================================
+   ACCESSIBILITY IMPROVEMENTS
+   ========================================== */
+
+/* Links must be distinguishable without relying on color alone */
+/* Add underline to body text links (not nav/buttons) */
+article a,
+main p a,
+main li a,
+.prose a,
+section p a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+article a:hover,
+main p a:hover,
+main li a:hover,
+.prose a:hover,
+section p a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Minimum touch target size: 44x44px for buttons and links */
+button,
+a {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Exception for inline text links - they don't need min size */
+p a,
+li a,
+span a {
+  min-height: auto;
+  min-width: auto;
+  display: inline;
+}
+
+/* Enhanced focus states for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--primary);
+  color: white;
+  padding: 12px 24px;
+  z-index: 9999;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Improve contrast for gray text - override Tailwind defaults */
+.text-gray-400 {
+  color: #6b7280 !important;
+  /* Darker for better contrast */
+}
+
+.text-gray-500 {
+  color: #4b5563 !important;
+  /* Darker for better contrast */
+}
+
+.text-gray-600 {
+  color: #374151 !important;
+  /* Ensure good contrast */
+}
+
+/* Footer text on dark background needs higher contrast */
+footer .text-gray-400 {
+  color: #9ca3af !important;
+  /* Lighter on dark bg */
+}
+
+footer .text-gray-500 {
+  color: #9ca3af !important;
+  /* Lighter on dark bg */
+}
+
+footer .text-gray-600 {
+  color: #d1d5db !important;
+  /* Lighter on dark bg */
+}
+
+/* ==========================================
+   COMPONENT STYLES
+   ========================================== */
 
 /* Hero Gradient */
 .hero-gradient {
@@ -116,13 +223,6 @@ html {
 .whatsapp-btn:hover {
   animation: none;
   transform: scale(1.1);
-}
-
-/* Focus states for accessibility */
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--primary);
-  outline-offset: 2px;
 }
 
 /* Details/summary styling */
