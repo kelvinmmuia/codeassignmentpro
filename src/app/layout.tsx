@@ -5,8 +5,7 @@ import { SITE_CONFIG, CONTACT } from "@/lib/constants";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { AnalyticsWrapper } from "@/components/AnalyticsWrapper";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -165,8 +164,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <WhatsAppButton />
-        <Analytics />
-        <SpeedInsights />
+        <AnalyticsWrapper />
       </body>
     </html>
   );
