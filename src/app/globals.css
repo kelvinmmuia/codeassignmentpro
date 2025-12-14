@@ -139,6 +139,81 @@ footer .text-gray-600 {
   /* Lighter on dark bg */
 }
 
+/* Fix specific contrast issues for WCAG 2.1 AA compliance */
+
+/* Green buttons need darker background for white text */
+.bg-green-500 {
+  background-color: #16a34a !important;
+  /* green-600 */
+}
+
+.bg-green-600 {
+  background-color: #15803d !important;
+  /* green-700 */
+}
+
+/* Red section contrast fixes */
+.bg-red-400 {
+  background-color: #dc2626 !important;
+  /* red-600 */
+}
+
+.text-red-600 {
+  color: #991b1b !important;
+  /* red-800 */
+}
+
+/* Green badge/text contrast fixes */
+.text-green-600 {
+  color: #166534 !important;
+  /* green-800 */
+}
+
+.text-green-700 {
+  color: #15803d !important;
+  /* green-700 */
+}
+
+/* Primary link color - darker blue */
+.text-primary {
+  color: #1d4ed8 !important;
+  /* blue-700 */
+}
+
+/* Footer disclaimer box - ensure text is readable */
+footer .bg-gray-800\/50,
+.bg-gray-800\/50 {
+  background-color: rgba(17, 24, 39, 0.85) !important;
+  /* Darker for better contrast */
+}
+
+footer .bg-gray-800\/50 p,
+footer .bg-gray-800\/50 a,
+.bg-gray-800\/50 p,
+.bg-gray-800\/50 a {
+  color: #f3f4f6 !important;
+  /* gray-100 */
+}
+
+/* White text on colored backgrounds - ensure readability */
+.bg-green-500 .text-white,
+.bg-green-600 .text-white,
+.bg-red-400 .text-white,
+.bg-red-600 .text-white {
+  color: #ffffff !important;
+}
+
+/* Gray-900 text should be truly dark */
+.text-gray-900 {
+  color: #111827 !important;
+}
+
+/* Ensure white cards have good text contrast */
+.bg-white .text-gray-700,
+.bg-gray-50 .text-gray-700 {
+  color: #374151 !important;
+}
+
 /* ==========================================
    COMPONENT STYLES
    ========================================== */
